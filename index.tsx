@@ -12,7 +12,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import firebaseConfig from './firebaseConfig';
 
 
-
+// RNText for font zooming issue (real time zoom in/out)
 const Text = (props: TextProps) => <RNText {...props} allowFontScaling={false} />;
 
 const App = () => {
