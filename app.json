@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "IND Heart",
-    "slug": "ind-heart",
-    "version": "1.0.3",
+    "name": "Suraksha IND",
+    "slug": "pinesphere-indheart",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "indheart",
+    "scheme": "pinesphereindheart",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -16,7 +16,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.indheart",
+      "package": "com.pinesphere.indheart",
       "versionCode": 2
     },
     "web": {

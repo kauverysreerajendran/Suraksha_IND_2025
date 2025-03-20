@@ -1,11 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyA5UEWEkfKOEtIERUI-6NF5vGkuMA1ZqFM",
-    authDomain: "ind-heart-suraksha.firebaseapp.com",
-    projectId: "ind-heart-suraksha",
-    storageBucket: "ind-heart-suraksha.firebasestorage.app",
-    messagingSenderId: "1083035191759",
-    appId: "1:1083035191759:android:7d839f9743ac6f2c7aeaba",
-    databaseURL: "https://ind-heart-suraksha.firebaseio.com/"
-  };
+  apiKey: "AIzaSyCs6aup-fPDYjFcsDpuWbj49uQI87zXLw0",
+  authDomain: "suraksha-ind.firebaseapp.com",
+  projectId: "suraksha-ind",
+  storageBucket: "suraksha-ind.firebasestorage.app",
+  messagingSenderId: "702823223934",
+  appId: "1:702823223934:android:0d7ce91280ee8c34813e2f"
+};
 
-  export default firebaseConfig;
+export default firebaseConfig;

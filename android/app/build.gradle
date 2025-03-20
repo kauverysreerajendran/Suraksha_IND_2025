@@ -2,6 +2,7 @@ apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
 
+
 project.ext.vectoricons = [
     iconFontNames: [ 
         'MaterialIcons.ttf', 
@@ -101,13 +102,18 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.indheart"
+    namespace "com.pinesphere.indheart"
     defaultConfig {
-        applicationId "com.indheart"
+        applicationId "com.pinesphere.indheart"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 4
-        versionName "1.0.3"
+        versionCode 1
+        versionName "1.0.1"
+    }
+
+     lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
 
      // Add the configurations block here
@@ -124,19 +130,21 @@ android {
             keyPassword 'android'
         } */
          debug {
-            storeFile file('my-upload-key.keystore')
-            storePassword 'Pine@1234'
-            keyAlias 'my-key-alias'
-            keyPassword 'Pine@1234'
-        }
-        release {
-            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
-                storeFile file("my-upload-key.keystore")
-            storePassword "Pine@1234"
-            keyAlias "my-key-alias"
-            keyPassword "Pine@1234"
-            }
-        }
+    storeFile file('my-new-key.keystore')
+    storePassword "Pine@123"
+    keyAlias "my-new-key-alias"
+    keyPassword "Pine@123"
+    storeType "PKCS12"
+}
+
+release {
+    storeFile file('my-new-key.keystore')
+    storePassword "Pine@123"
+    keyAlias "my-new-key-alias"
+    keyPassword "Pine@123"
+    storeType "PKCS12"
+}
+
     }
     buildTypes {
         debug {

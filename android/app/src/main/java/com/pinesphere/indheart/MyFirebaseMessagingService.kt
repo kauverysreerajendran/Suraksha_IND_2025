@@ -1,5 +1,5 @@
 // filepath: /android/app/src/main/java/com/indheart/MyFirebaseMessagingService.kt
-package com.indheart
+package com.pinesphere.indheart
 
 import android.app.NotificationManager
 import android.content.Context

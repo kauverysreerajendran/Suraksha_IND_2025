@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Alert } from 'react-native';
+import { Alert, LogBox } from 'react-native';
 import { registerRootComponent } from "expo";
 import { Provider } from "react-redux";
 import StackNavigation from "./app/navigations/StackNavigation";
@@ -11,7 +11,8 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import firebaseConfig from './firebaseConfig';
 
-// Custom Text component to disable font scaling globally
+
+
 const Text = (props: TextProps) => <RNText {...props} allowFontScaling={false} />;
 
 const App = () => {
